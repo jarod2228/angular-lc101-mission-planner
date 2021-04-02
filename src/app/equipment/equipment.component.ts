@@ -30,9 +30,9 @@ remove(piece: string) {
 edit(piece: string) {
   this.pieceBeingEdited = piece;
 }
-save(piece: string) {
+save(renamedPiece: string, piece: string) {
   let index = this.equipment.indexOf(piece);
-  this.equipment.splice(index, 1, piece);
+  this.equipment.splice(index, 1, renamedPiece);
   this.pieceBeingEdited = null;
 }
 }

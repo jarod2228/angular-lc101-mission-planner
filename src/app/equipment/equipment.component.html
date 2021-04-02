@@ -8,7 +8,7 @@
     </span>
     <ng-template #elsePiece>
       <input #updatedPiece (keyup.enter) = "save(updatedPiece.value)" value = "{{piece}}"/>
-      <button (click) = "save(updatedPiece.value, member)">save</button>
+      <button (click) = "save(updatedPiece.value, piece)">save</button>
     </ng-template>
 
   </li>
